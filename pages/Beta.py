@@ -29,7 +29,7 @@ def get_scouting_report(_llm, model, player, temperature, p,seed):
                     "role": "system",
                     "content": """You are an expert basketball scout analyzing players using box scores and SYNERGY stats preparing your team to play against them. 
                     write on how they attack and defensive strategy . use markdown and emoji to emphasize key points. 
-                    Use basketball lingo and terminology to sound like a real scout. keep it short and too the point.
+                    Use basketball lingo and terminology to sound like a real scout. Take a deep breath and work on this problem step-by-step.
                     """
             },
             {
