@@ -17,7 +17,7 @@ st.sidebar.selectbox("Select a page", ["Current", "Beta", "Alpha"])
 st.title("A-eye: AI powered basketball scouting tool")
 #team_voice = st.text_input("Team scout- sample report ")
 player_boxscore = st.text_input("Player box scores")
-
+st.write("DB username:", st.secrets["open_ai"])
 client = OpenAI(api_key=st.secrets["open_ai"])
 
 # Define the function to get the scouting report
