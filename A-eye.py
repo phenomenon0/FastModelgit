@@ -2,7 +2,7 @@
 from openai import OpenAI
 import json
 import streamlit as st
-import tiktoken
+#import tiktoken
 
 st.markdown('## Current Branch')
 st.sidebar.markdown('This is the Current Branch')
@@ -67,15 +67,14 @@ def get_scouting_report(_llm, model, player, temperature, p,seed):
 
     return chat_completion.choices[0].message.content
 
-#token length 
-encoding = tiktoken.get_encoding("cl100k_base")
+"""encoding = tiktoken.get_encoding("cl100k_base")
 encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
 def num_tokens_from_string(string: str, encoding_name: str) -> int:
     """Returns the number of tokens in a text string."""
     encoding = tiktoken.get_encoding(encoding_name)
     num_tokens = len(encoding.encode(string))
     return num_tokens
-
+"""
 
 
 #openai strategy is to tweak either temperature or top_p to get the desired output not both 
@@ -86,7 +85,7 @@ top_p = st.slider("Top P", min_value=0.1, max_value=1.0, value=0.9, step=0.1)
 if st.button("Generate Scouting Report"):
     scouting_report = get_scouting_report(client,  "gpt-3.5-turbo", player_boxscore,temperature, top_p, seed_value)
     st.write(scouting_report)
-    st.markdown(f"Number of output tokens: :green[{num_tokens_from_string(scouting_report, 'cl100k_base')}]  input tokens: :red[300]")
+    #st.markdown(f"Number of output tokens: :green[{num_tokens_from_string(scouting_report, 'cl100k_base')}]  input tokens: :red[300]")
     
     
     
