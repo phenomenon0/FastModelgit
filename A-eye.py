@@ -18,7 +18,7 @@ st.title("A-eye: AI powered basketball scouting tool")
 #team_voice = st.text_input("Team scout- sample report ")
 player_boxscore = st.text_input("Player box scores")
 
-client = OpenAI(api_key=st.secrets["OPEN_AI_KEY"])
+client = OpenAI(api_key=st.secrets["open_ai"])
 
 # Define the function to get the scouting report
 @st.cache_data()
