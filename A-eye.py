@@ -67,7 +67,7 @@ def get_scouting_report(_llm, model, player, temperature, p,seed):
 
     return chat_completion.choices[0].message.content
 
-"""encoding = tiktoken.get_encoding("cl100k_base")
+fake = """encoding = tiktoken.get_encoding("cl100k_base")
 encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
 def num_tokens_from_string(string: str, encoding_name: str) -> int:
     """Returns the number of tokens in a text string."""
