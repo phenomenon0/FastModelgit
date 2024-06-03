@@ -1,4 +1,4 @@
-openai==1.14.1
-tiktoken 
-json 
-os
+streamlit>=1.28
+json
+openai>=1.4
+tiktoken>=1.1
