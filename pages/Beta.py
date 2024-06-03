@@ -2,7 +2,7 @@
 from openai import OpenAI
 import json
 import streamlit as st
- import os
+import os
 st.markdown('## Beta')
 st.sidebar.markdown('This is the Beta page, ')
 
