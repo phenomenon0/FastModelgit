@@ -2,7 +2,7 @@
 from openai import OpenAI
 import json
 import streamlit as st
- 
+ import os 
 
 st.markdown('## Current Branch')
 st.sidebar.markdown('This is the Current Branch')

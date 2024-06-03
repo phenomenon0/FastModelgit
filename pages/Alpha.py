@@ -2,6 +2,7 @@
 from openai import OpenAI
 import json
 import streamlit as st
+import os 
 st.markdown('## Alpha')
 st.sidebar.markdown('This is the Alpha page')
 
