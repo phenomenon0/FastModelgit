@@ -12,13 +12,13 @@ with st.sidebar:
     
      
 st.sidebar.selectbox("Select a page", ["Current", "Beta", "Alpha"])
-
+client = OpenAI(api_key=openai_api_key)
 ################ PAGE STARTS HERE ############################## 
 
 st.title("A-eye: AI powered basketball scouting tool")
 #team_voice = st.text_input("Team scout- sample report ")
 player_boxscore = st.text_input("Player box scores")
-client = OpenAI(api_key=openai_api_key)
+
 
 
 # Define the function to get the scouting report
