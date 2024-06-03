@@ -75,8 +75,8 @@ def get_scouting_report(_llm, model, player, temperature, p,seed):
 
 #openai strategy is to tweak either temperature or top_p to get the desired output not both 
 seed_value = st.radio("Seed Values", [111, 2652, 230, 4432])
-temperature = st.slider("Temperature", min_value=0.1, max_value=2.0, value=0.5, step=0.1)
-top_p = st.slider("Top P", min_value=0.1, max_value=1.0, value=0.9, step=0.1)
+temperature = st.slider("Temperature", min_value=0.1, max_value=2.0, value=1.1, step=0.1)
+top_p = st.slider("Top P", min_value=0.1, max_value=1.0, value=1.0, step=0.1)
 
 if st.button("Generate Scouting Report"):
     scouting_report = get_scouting_report(client,  "gpt-3.5-turbo", player_boxscore,temperature, top_p, seed_value)
