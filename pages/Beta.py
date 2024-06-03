@@ -15,8 +15,7 @@ st.sidebar.markdown('This is the Beta page, ')
 st.title("A-eye: freewill version -- beta No sample report")
 #team_voice = st.text_input("Team scout- sample report ")
 player_boxscore = st.text_input("Player box scores")
-client = OpenAI(api_key=openai_api_key)
-
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Define the function to get the scouting report
 @st.cache_data()

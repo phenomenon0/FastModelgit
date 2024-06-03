@@ -6,20 +6,19 @@ import streamlit as st
 
 st.markdown('## Current Branch')
 st.sidebar.markdown('This is the Current Branch')
-with st.sidebar:
-    openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
+
      
     
      
 st.sidebar.selectbox("Select a page", ["Current", "Beta", "Alpha"])
-client = OpenAI(api_key=openai_api_key)
+
 ################ PAGE STARTS HERE ############################## 
 
 st.title("A-eye: AI powered basketball scouting tool")
 #team_voice = st.text_input("Team scout- sample report ")
 player_boxscore = st.text_input("Player box scores")
 
-
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Define the function to get the scouting report
 @st.cache_data()
