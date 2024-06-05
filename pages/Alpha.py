@@ -20,7 +20,7 @@ client = OpenAI(api_key=st.secrets["open_ai"])
 def get_scouting_report(_llm, model, player, temperature, seed):
     chat_completion = _llm.chat.completions.create(
         model=model,
-        p=1.0,
+        top_p=1.0,
         
         messages=[
             {
