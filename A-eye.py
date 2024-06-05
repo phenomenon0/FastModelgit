@@ -72,7 +72,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
 
 #openai strategy is to tweak either temperature or top_p to get the desired output not both 
 seed_value = st.radio("Seed Values", [111, 2652, 230, 4432])
-temperature = st.slider("Changes behavior- higher is more random🎲", min_value=0.5, max_value=1 value=0.7, step=0.1)
+temperature = st.slider("Changes behavior- higher is more random🎲", min_value=0.5, max_value=1, value=0.7, step=0.1)
 
 
 if st.button("Generate Scouting Report from input"):
