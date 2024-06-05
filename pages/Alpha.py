@@ -52,7 +52,7 @@ def get_scouting_report(_llm, model, player, temperature, seed):
             },
             {
                 "role": "user",
-                "content": player_boxscore + "analyze player keep it use boxscores to highlight key stats and synergy stats to highlight play types(ignore those with less than 5%). "
+                "content": player_boxscore + "analyze player keep it short!  use boxscores to highlight key stats and synergy stats to highlight play types(ignore those with less than 5%). "
             },
             
         ],
