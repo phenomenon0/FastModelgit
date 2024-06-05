@@ -62,22 +62,21 @@ def get_scouting_report(_llm, model, player, temperature,seed):
             },
             {
                 "role": "user",
-                "content": player_boxscore + "analyze player coach and follow the example as well as you can in terms of grammar,language and tone."
+                "content": player_boxscore + "analyze player coach and follow the example as well as you can in terms of grammar,language and tone  stick to data only in the stats.keep it short and concise"
             },
             
         ],
     )
 
     return chat_completion.choices[0].message.content
- 
 
 #openai strategy is to tweak either temperature or top_p to get the desired output not both 
 seed_value = st.radio("Seed Values", [111, 2652, 230, 4432])
-temperature = st.slider("Changes behavior- higher is more random🎲", min_value=1.4, max_value=2.0, value=1.7, step=0.1)
+temperature = st.slider("Changes behavior- higher is more random🎲", min_value=0.6, max_value=2.0, value=0.7, step=0.1)
 
 
 if st.button("Generate Scouting Report from input"):
-    scouting_report = get_scouting_report(client,  "gpt-3.5-turbo", player_boxscore,temperature, seed_value)
+    scouting_report = get_scouting_report(client,  "gpt-4o", player_boxscore,temperature, seed_value)
     st.write(scouting_report)
     
 
@@ -91,7 +90,7 @@ def generate_scouting_report(data):
     if "current_index" not in st.session_state:
         st.session_state.current_index = 0
     player_boxscore = data[st.session_state.current_index]
-    scouting_report = get_scouting_report(client, "gpt-3.5-turbo", player_boxscore, temperature,  seed_value)
+    scouting_report = get_scouting_report(client, "gpt-4o", player_boxscore, temperature,  seed_value)
     st.write(scouting_report)
     st.session_state.current_index = (st.session_state.current_index + 1) % len(data)
 
