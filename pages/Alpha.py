@@ -12,7 +12,7 @@ st.sidebar.markdown('This is the Alpha page')
 st.title("A-eye: AI powered basketball scouting tool, Defensive v 1")
 #team_voice = st.text_input("Team scout- sample report ")
 player_boxscore = st.text_input("Player box scores")
-client = OpenAI()
+client = OpenAI(api_key=st.secrets["open_ai"])
 
 
 # Define the function to get the scouting report
