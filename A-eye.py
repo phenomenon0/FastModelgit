@@ -34,7 +34,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
                     Use Markdown and emojis to emphasize key points. Highlight only 5 of the most important statistics 
                     Keep it simple and concise these are matchday instructions  make it lean 
                     
-                    Example Output:
+                  this an example of user prompt and assistant response
                    user: GP-GS PTS MIN FGM-A FG% 3PM-A 3P/%/ FT/%/ FTM-A REB AST TO STL BLK 
                             All 20-10 4.2 17.2 1.6-4.3 37.2% 0.5-1.8 27.0% 83.3/% 0.5-0.6 1.7 1.2 1.0 0.6 0.0
                             Conf 10-6 6.5 21.8 2.5-5.5 45.5% 0.9-2.3 39.1% 100/% 0.6-0.6 1.8
@@ -67,7 +67,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
             },
             {
                 "role": "user",
-                "content": player_boxscore + "analyze player coach and follow the example as well as you can in terms of grammar,language and tone  stick to data only in the stats.keep it short and concise --- make sure numbers are accurate "
+                "content": player_boxscore + "analyze player coach and follow the example as well as you can in terms of grammar,language and tone  stick to data only in the stats use both synergy and boxscores.keep it short and concise --- make sure numbers are accurate "
             },
             
         ],
