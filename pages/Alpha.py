@@ -17,9 +17,10 @@ client = OpenAI(api_key=st.secrets["open_ai"])
 
 # Define the function to get the scouting report
 @st.cache_data()
-def get_scouting_report(_llm, model, player, temperature, p,seed):
+def get_scouting_report(_llm, model, player, temperature, seed):
     chat_completion = _llm.chat.completions.create(
         model=model,
+        p=1.0,
         
         messages=[
             {
@@ -66,7 +67,7 @@ temperature = st.slider("Temperature", min_value=0.1, max_value=2.0, value=0.5, 
 
 
 if st.button("Generate Scouting Report"):
-    scouting_report = get_scouting_report(client,  "gpt-3.5-turbo", player_boxscore,temperature, p=1.0, seed=seed_value)
+    scouting_report = get_scouting_report(client,  "gpt-3.5-turbo", player_boxscore,temperature,  seed=seed_value)
     st.write(scouting_report)
     
 
@@ -78,7 +79,7 @@ def generate_scouting_report(data):
     if "current_index" not in st.session_state:
         st.session_state.current_index = 0
     player_boxscore = data[st.session_state.current_index]
-    scouting_report = get_scouting_report(client, "gpt-3.5-turbo", player_boxscore, temperature,p=1.0,  seed_value)
+    scouting_report = get_scouting_report(client, "gpt-3.5-turbo", player_boxscore, temperature,  seed_value)
     st.write(scouting_report)
     st.session_state.current_index = (st.session_state.current_index + 1) % len(data)
 
