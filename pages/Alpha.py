@@ -52,17 +52,16 @@ def get_scouting_report(_llm, model, player, temperature, p,seed):
                 - Attack him & make the right play, KEY: Sprint Back & Locate in Transition 
                 - NO 3's!! Make him Bounce into tough, contested 2's, BOX OUT
                 
-                Q: GP-GS PTS MIN FGM-A FG% 3PM-A 3P/%/ FT/%/ FTM-A REB AST TO STL BLK
+                user: GP-GS PTS MIN FGM-A FG% 3PM-A 3P/%/ FT/%/ FTM-A REB AST TO STL BLK
                 All, 34-0, 9.0, 2.0, 1.2, 0.4, 28-74, 37.8%, 7-37, 18.9%, 5-9, 55.6%
                 Conf, 19-0, 9.4, 2.5, 1.5, 0.3, 19-45, 42.2%, 4-23, 17.4%, 5-6, 83.3%
                 
-                A: DRIVER - CAPABLE SHOOTER
-                Athletic guard - Most damage done in Transition, Runs the floor hard for easy baskets,
-                Either @ Rim or Shooting a 3 - No midrange game, Attacks both ways. LOVES SF!! Gets to floater or jump stop finish, 
-                1/2 FGA = 3's. All C&S!! Will run for 3's in transition & relocate on teammate drives, Low %, better recently Last 5:
-                29% 3PT [2-7], Excellent Cutter on teammate dribble penetration, KEY: Sprint Back in Transition, Nothing easy! GYY - 
-                Keep the ball in front & make him finish over. Contest shots high!
-
+                A:DRIVER - CAPABLE SHOOTER 🏀🎯
+                Athletic guard 🏃‍♂️💪 - Most damage done in Transition 🏃‍♂️💥, Runs the floor hard for easy baskets 🏀⚡,
+                Either @ Rim or Shooting a 3 🏀🏹 - No midrange game 🚫📏, Attacks both ways 🔄🔥. LOVES SF!! ❤️🏀 Gets to floater or jump stop finish 🏀🛑,
+                1/2 FGA = 3's 🔢🎯. All C&S!! 🎯📤 Will run for 3's in transition & relocate on teammate drives 🏃‍♂️🏀, Low %, better recently Last 5:
+                29% 3PT [2-7] 📉📈, Excellent Cutter on teammate dribble penetration ✂️🏀, KEY: Sprint Back in Transition 🏃‍♂️🏃‍♂️, Nothing easy! 🚫❗ GYY -
+                Keep the ball in front & make him finish over. Contest shots high! 🚧✋
                 
                 """
             },
