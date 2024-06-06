@@ -67,7 +67,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
             },
             {
                 "role": "user",
-                "content": player_boxscore + "analyze player coach and follow the example as well as you can in terms of grammar,language and tone  stick to data only in the stats use both synergy and boxscores.keep it short and concise --- make sure numbers are accurate "
+                "content": player_boxscore  
             },
             
         ],
