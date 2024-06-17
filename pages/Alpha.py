@@ -42,8 +42,7 @@ def get_scouting_report(_llm, model, player, temperature):
                     Use Markdown and emojis to emphasize key points. Answer the question asked about the team    
                     Keep it simple and concise these are matchday instructions  make it lean as veal.
                     use stats only to highlight key points
-                    one sentence for each point and a header and no need to create bullet points 
-                 
+
                 """
             },
             {
@@ -56,7 +55,6 @@ def get_scouting_report(_llm, model, player, temperature):
 
     return chat_completion.choices[0].message.content
 
-#openai strategy is to tweak either temperature or top_p to get the desired output not both 
 
 temperature = st.slider("Changes behavior- higher is more random🎲", min_value=0.5, max_value=2.0, value=1.5, step=0.1)
 
