@@ -31,29 +31,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
 
 Given a JSON file containing synergy stats and box score data for a basketball player, your task is to generate a narrative summary of the player's performance across various play types. The output should highlight key statistics and provide insights in a readable, narrative format without first listing all the stats. Here is an example of the desired output format:
 
-Example Output:
 
-Highly efficient on cuts with an impressive 63.6% shooting and zero turnovers. 🔥🎯
-
-Hand-offs aren't his strong suit, with a low shooting percentage of 17.4% and modest points per possession. 🚫🏀
-
-Kyle struggles in isolation plays, failing to score with a FG% of 0% and a high turnover rate. 😓🔄
-
-Similarly, other plays labeled as miscellaneous show poor shooting and a high turnover rate. 📉⛔
-
-Kyle capitalizes well on offensive rebounds, showing a solid FG% 46.7% and efficient scoring. 🏀💪
-
-Off-screen plays exhibit moderate efficiency with a reasonable FG percentage (FG%: 31.6%). 📏🏹
-
-Kyle excels significantly as a ball handler in pick and roll situations without sacrificing shot accuracy (FG%: 54.2% 🌟). 🔄🏆
-
-Consistent as a roll man in PnR with decent shooting percentage and low turnovers, scoring the second most points here. 📊🎯
-
-A proficient spot-up shooter with a solid FG% and good overall efficiency. 🎯🏀
-
-Effective in transition with high PPP and a solid shooting percentage. 🚀🔥
-
-Kyle Rode is a competent scorer averaging 14.2 points per game, shooting 38.8% from three-point range, and contributing with 4.9 rebounds and 2.5 assists. ⭐🏀
 
 Instructions:
 
