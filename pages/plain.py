@@ -27,85 +27,26 @@ def get_scouting_report(_llm, model, player, temperature,seed):
         messages=[
             {
                     "role": "system",
-                    "content": """# Player Statistics Analysis Prompt
+                    "content": """ 
+Create an engaging, brief summary of a basketball player's performance using the following guidelines:
 
-You are tasked with analyzing basketball player statistics and generating insightful descriptions of player performance. Follow these steps to create a comprehensive analysis:
+Overall Impact (1 sentence):
+Summarize the player's role and primary contribution to the team.
+Example: "Max Rice is a sharpshooting guard who spreads the floor and punishes defenses from beyond the arc."
+Standout Statistic (1 sentence):
+Highlight the player's most impressive or unique statistical achievement.
+Example: "His 83.9% free throw accuracy puts him in the elite 87th percentile of shooters from the charity stripe."
+Offensive Toolkit (1-2 sentences):
+Describe the player's most effective offensive moves or situations.
+Example: "Rice thrives in spot-up situations, boasting a 53.5% adjusted field goal percentage and 1.042 points per possession in these scenarios."
+Areas for Improvement (1 sentence):
+Briefly mention one or two aspects of the player's game that need work.
+Example: "Improving his 37.2% overall field goal percentage could elevate his game to the next level."
+Intriguing Fact (1 sentence):
+Include an interesting statistic or fact that adds color to the player's profile.
+Example: "Despite his guard status, Rice contributes a solid 3.7 rebounds per game, showcasing his all-around effort on the court."
 
-## 1. Data Preparation
-
-Ensure you have the following statistics for each player:
-
-- Points
-- Offensive Rebounds
-- Defensive Rebounds
-- Assists
-- Turnovers
-- Steals
-- Blocks
-- 2 pt FG %
-- 2ptFGA
-- 3 pt FG %
-- 3ptFGA
-- FT%
-- Free Throw Rate
-- Points Per Possession
-
-## 2. Statistical Hierarchy
-
-For the following categories, use statistics in this order of preference:
-1. Percentage (e.g., Offensive Rebound Percentage)
-2. Per 40 minute values
-3. Per game values
-
-Categories: Offensive Rebounds, Defensive Rebounds, Assists, Turnovers, Steals, Blocks
-
-## 3. Analysis Steps
-
-### 3.1 Basic Per Game Stats
-If only per-game stats are available, use these for initial analysis.
-
-### 3.2 Percentage-based Stats
-Prioritize percentage-based stats when available for a more accurate representation.
-
-### 3.3 Contextual Rankings
-For each statistic, provide context by ranking the player's performance. Use descriptive language to convey their standing. Examples:
-
-- "[Player] has an offensive rebounding percentage of [X]%, making them one of the better players off the offensive glass."
-- "[Player] is a poor free throw shooter at only [X]%."
-- "[Player] shoots [X]% on 3-pointers, which is slightly above league average."
-
-### 3.4 Shot Selection and Location Analysis
-Analyze the player's shooting performance from five zones:
-- At the rim
-- Short mid-range
-- Long mid-range
-- Corner three
-- Above the break three
-
-For each zone, comment on:
-1. Frequency of shots taken
-2. Effectiveness from that location
-
-Example statements:
-- "[Player] takes very few shots at the rim ([X]% of their shots) and is an ineffective shooter from that distance ([Y]%)."
-- "[Player] takes a lot of corner threes ([X]% of their shots), and is slightly below average at that location ([Y]%)."
-
-### 3.5 Highlight Key Strengths and Weaknesses
-Instead of commenting on all stats, focus on the player's top strengths and notable weaknesses. Provide analysis for:
-- Top 3-5 statistical strengths
-- Bottom 2-3 statistical weaknesses
-
-## 4. Output Format
-
-For each player, provide:
-
-1. A brief overall summary (2-3 sentences)
-2. 3-5 sentences highlighting their key strengths, using contextual rankings
-3. 2-3 sentences noting their main weaknesses
-4. 1-2 sentences about their shot selection and efficiency from different areas of the court
-
-Ensure the analysis is clear, concise, and provides meaningful insights into the player's performance and playing style.
-                """
+Combine these elements into a cohesive paragraph of 5-6 sentences, ensuring the summary is informative, engaging, and captures the essence of the player's performance in a concise manner.   """
             },
             {
                 "role": "user",
