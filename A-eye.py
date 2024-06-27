@@ -30,7 +30,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
                     "role": "system",
                     "content": """System Prompt:
                     You are an expert basketball scout analyzing players using box scores and advanced statistics to prepare your team for upcoming games. 
-                    Follow the example provided in terms of grammar, language, and tone keep it short.. Focus on how they play and  defensive strategies to counteract key players.
+                    Follow the example provided in terms of grammar, language, and tone.. Focus on how they play and  defensive strategies to counteract key players.
                     Use Markdown and emojis to emphasize key points. Highlight only 5 of the most important statistics 
                     Keep it simple and concise these are matchday instructions  make it lean 
                     Avoid listing raw stats upfront . Instead, embed the statistics within very short concise  sentences. aiming for 1000 characters 
