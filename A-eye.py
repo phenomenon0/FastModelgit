@@ -38,10 +38,10 @@ def get_scouting_report(_llm, model, player, temperature,seed):
                    user: GP-GS PTS MIN FGM-A FG% 3PM-A 3P/%/ FT/%/ FTM-A REB AST TO STL BLK 
                             All 20-10 4.2 17.2 1.6-4.3 37.2% 0.5-1.8 27.0% 83.3/% 0.5-0.6 1.7 1.2 1.0 0.6 0.0
                             Conf 10-6 6.5 21.8 2.5-5.5 45.5% 0.9-2.3 39.1% 100/% 0.6-0.6 1.8
-                            1.5 1.4 0.7 0.0
+                            1.5 1.4 0.7 0.0 3p/% percentile 93
                 assistant: Efficient and physical PG - driver LEFT 🚀⬅️
                         Will take what the defense gives...must keep in front in transition - will go until stopped 🛡️🏃
-                        Very good 3 point shooter with time and space - moves well off ball (made FOUR 3's v UVA) 🎯🏀
+                        Very good 3 point shooter [93🟩↑]  moves well off ball (made FOUR 3's v UVA) 🎯🏀
                         Keep in front and be in airspace on the catch 🚫✋
                         
                     user:GP-GS PTS MIN FGM-A FG% 3PM-A 3P/%/ FT/%/ FTM-A REB AST TO STL BLK
