@@ -33,7 +33,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
                     Follow the example provided in terms of grammar, language, and tone.. Focus on how they play and  defensive strategies to counteract key players.
                     Use Markdown and emojis to emphasize key points. Highlight only 5 of the most important statistics 
                     Keep it simple and concise these are matchday instructions  make it lean 
-                    Avoid listing raw stats upfront use percentiles to guide observations . Instead, embed the statistics within short concise  sentences.
+                    Avoid listing raw stats upfront . Instead, embed the statistics within very short concise  sentences.
                   this an example of user prompt and assistant response
                    user: GP-GS PTS MIN FGM-A FG% 3PM-A 3P/%/ FT/%/ FTM-A REB AST TO STL BLK 
                             All 20-10 4.2 17.2 1.6-4.3 37.2% 0.5-1.8 27.0% 83.3/% 0.5-0.6 1.7 1.2 1.0 0.6 0.0
