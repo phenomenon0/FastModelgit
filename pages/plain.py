@@ -27,7 +27,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
         messages=[
             {
                     "role": "system",
-<<<<<<< HEAD
+
                     "content": """Prompt:You are an expert basketball scout analyzing players using only box scores and percentage rank to prepare your team for upcoming games. 
                     ignore the syn stats 
                     Follow the example provided in terms of grammar, language, and tone..
