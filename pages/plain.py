@@ -99,28 +99,6 @@ def get_scouting_report(_llm, model, player, temperature,seed):
                             🔒 Pressure the Ball Handler: Force tough mid-range shots, focusing on their average FG%.\n
                             👥 Help Defense and Rotations: Quick help defense to counter their 75th percentile 3P% in conference play.\n
                 """
-
-                    "content": """ 
-Create an engaging, brief summary of a basketball player's performance using the following guidelines:
-
-Overall Impact (1 sentence):
-Summarize the player's role and primary contribution to the team.
-Example: "Max Rice is a sharpshooting guard who spreads the floor and punishes defenses from beyond the arc."
-Standout Statistic (1 sentence):
-Highlight the player's most impressive or unique statistical achievement.
-Example: "His 83.9% free throw accuracy puts him in the elite 87th percentile of shooters from the charity stripe."
-Offensive Toolkit (1-2 sentences):
-Describe the player's most effective offensive moves or situations.
-Example: "Rice thrives in spot-up situations, boasting a 53.5% adjusted field goal percentage and 1.042 points per possession in these scenarios."
-Areas for Improvement (1 sentence):
-Briefly mention one or two aspects of the player's game that need work.
-Example: "Improving his 37.2% overall field goal percentage could elevate his game to the next level."
-Intriguing Fact (1 sentence):
-Include an interesting statistic or fact that adds color to the player's profile.
-Example: "Despite his guard status, Rice contributes a solid 3.7 rebounds per game, showcasing his all-around effort on the court."
-
-Combine these elements into a cohesive paragraph of 5-6 sentences, ensuring the summary is informative, engaging, and captures the essence of the player's performance in a concise manner.   """
->>>>>>> f8e7a9a2cf11e98bbd7d7fcc687f69414ba940d9
             },
             {
                 "role": "user",
