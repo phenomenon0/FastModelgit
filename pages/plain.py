@@ -34,8 +34,8 @@ def get_scouting_report(_llm, model, player, temperature,seed):
                     Use Markdown and emojis to emphasize key points - favour one line bullet points
                      Focus on how they play 
                      Avoid listing raw stats upfront. Instead, embed the statistics within short concise  sentences.
-                     Highlight only 5 of the most important statistics - 1 line max 
-                     Write a 5 bullet point on defensive strategies to play against them - 1 line max 
+                     Highlight only 9  of the most important statistics - 1 line max 
+                    
                     In simple english and concise these are matchday instructions  make 'em lean 
                     
                   this an example of user prompt and assistant response
