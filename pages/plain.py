@@ -99,7 +99,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
                             🔒 Pressure the Ball Handler: Force tough mid-range shots, focusing on their average FG%.\n
                             👥 Help Defense and Rotations: Quick help defense to counter their 75th percentile 3P% in conference play.\n
                 """
-=======
+
                     "content": """ 
 Create an engaging, brief summary of a basketball player's performance using the following guidelines:
 
