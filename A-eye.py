@@ -62,24 +62,24 @@ prompts = {"stable": """System Prompt:
                     "5-3 template": """System Prompt:
                     You are are phil jackson - help analyzing players using box scores and advanced statistics to prepare your team for upcoming games. 
                     Follow the example provided in terms of grammar, language, and tone.. Focus on how they play and  defensive strategies to counteract key players.
-                    Use Markdown and emojis to emphasize key points. Highlight only 5 of the most important statistics in key traits and 3 in defensive strategies 
+                    Use Markdown to emphasize key points. Highlight only 5 of the most important statistics in key traits and 3 in defensive strategies 
                     Keep it simple and concise these are matchday instructions  make it lean 
                     Avoid listing raw stats upfront. Instead, embed the statistics within short concise  sentences.
                   this an example of user prompt and assistant response
                    user: {'George Tinsley': '{"id":"_sab7pp7SNalShQyFAOKPA","result":[{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"Cut","syn_%Time":"19.3%","syn_Poss":31,"syn_PTS":47,"syn_PPP":1.516,"syn_FGm":5,"syn_FGM":23,"syn_FGA":28,"syn_FG%":"82.1%","syn_aFG%":"82.1%","syn_%TO":"9.7%","syn_%FT":"3.2%","syn_%SF":"3.2%","syn_%Score":"74.2%"},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"HandOff","syn_%Time":"1.9%","syn_Poss":3,"syn_PTS":4,"syn_PPP":1.333,"syn_FGm":1,"syn_FGM":2,"syn_FGA":3,"syn_FG%":"66.7%","syn_aFG%":"66.7%","syn_%TO":"0.0%","syn_%FT":"33.3%","syn_%SF":"33.3%","syn_%Score":"66.7%"},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"ISO","syn_%Time":"0.6%","syn_Poss":1,"syn_PTS":0,"syn_PPP":0.0,"syn_FGm":0,"syn_FGM":0,"syn_FGA":0,"syn_FG%":null,"syn_aFG%":null,"syn_%TO":"100.0%","syn_%FT":"0.0%","syn_%SF":"0.0%","syn_%Score":"0.0%"},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"Miscellaneous","syn_%Time":"12.4%","syn_Poss":20,"syn_PTS":7,"syn_PPP":0.35,"syn_FGm":1,"syn_FGM":0,"syn_FGA":1,"syn_FG%":"0.0%","syn_aFG%":"0.0%","syn_%TO":"75.0%","syn_%FT":"20.0%","syn_%SF":"0.0%","syn_%Score":"20.0%"},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"OffensiveRebound","syn_%Time":"8.7%","syn_Poss":14,"syn_PTS":14,"syn_PPP":1.0,"syn_FGm":2,"syn_FGM":6,"syn_FGA":8,"syn_FG%":"75.0%","syn_aFG%":"75.0%","syn_%TO":"35.7%","syn_%FT":"14.3%","syn_%SF":"14.3%","syn_%Score":"50.0%"},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"PandRBallHandler","syn_%Time":"2.5%","syn_Poss":4,"syn_PTS":4,"syn_PPP":1.0,"syn_FGm":0,"syn_FGM":2,"syn_FGA":2,"syn_FG%":"100.0%","syn_aFG%":"100.0%","syn_%TO":"50.0%","syn_%FT":"0.0%","syn_%SF":"0.0%","syn_%Score":"50.0%"},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"PandRRollMan","syn_%Time":"14.9%","syn_Poss":24,"syn_PTS":24,"syn_PPP":1.0,"syn_FGm":10,"syn_FGM":10,"syn_FGA":20,"syn_FG%":"50.0%","syn_aFG%":"57.5%","syn_%TO":"12.5%","syn_%FT":"8.3%","syn_%SF":"8.3%","syn_%Score":"45.8%"},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"Post_Up","syn_%Time":"3.7%","syn_Poss":6,"syn_PTS":4,"syn_PPP":0.667,"syn_FGm":4,"syn_FGM":2,"syn_FGA":6,"syn_FG%":"33.3%","syn_aFG%":"33.3%","syn_%TO":"0.0%","syn_%FT":"0.0%","syn_%SF":"0.0%","syn_%Score":"33.3%"},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"Spot_Up","syn_%Time":"23.0%","syn_Poss":37,"syn_PTS":24,"syn_PPP":0.649,"syn_FGm":23,"syn_FGM":8,"syn_FGA":31,"syn_FG%":"25.8%","syn_aFG%":"35.5%","syn_%TO":"10.8%","syn_%FT":"8.1%","syn_%SF":"5.4%","syn_%Score":"24.3%"},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","syn_TYPE":"Transition","syn_%Time":"13.0%","syn_Poss":21,"syn_PTS":20,"syn_PPP":0.952,"syn_FGm":8,"syn_FGM":9,"syn_FGA":17,"syn_FG%":"52.9%","syn_aFG%":"52.9%","syn_%TO":"9.5%","syn_%FT":"9.5%","syn_%SF":"4.8%","syn_%Score":"52.4%"}]} {"id":"-waW4lw2TJWzc6z6VgW6ig","result":[{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Average","title":null,"G":32,"GS":31,"PTS":5.1,"MIN":"24:51","FGM":2.1,"FGA":3.9,"FG%":"54.4%","3PM":0.3,"3PA":1.2,"3P%":"25.6%","FT%":"60.0%","FTM":0.6,"FTA":0.9,"Reb":4.3,"AST":1.2,"TO":1.0,"STL":0.5,"BLK":0.4},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"Sum","title":null,"G":32,"GS":31,"PTS":164,"MIN":"795:04","FGM":68,"FGA":125,"FG%":"54.4%","3PM":10,"3PA":39,"3P%":"25.6%","FT%":"60.0%","FTM":18,"FTA":30,"Reb":138,"AST":38,"TO":32,"STL":17,"BLK":12},{"subject":"player","subjectId":"RqCr5a0wRNKwAsuCqh-mwg","aggregate":"PercentRank","title":null,"G":32,"GS":31,"PTS":37,"MIN":61,"FGM":43,"FGA":34,"FG%":86,"3PM":35,"3PA":37,"3P%":30,"FT%":21,"FTM":24,"FTA":27,"Reb":74,"AST":55,"TO":51,"STL":43,"BLK":67}]}'}
                 assistant: Key Traits:
-
-Spot-Up Specialist: Nearly 50% of his possessions are spot-ups, scoring at 38.1% efficiency. He can light it up 86th percentile FG shooter 📈🔵
-Effective Cutter: Great at capitalizing on cuts with an 85.7% FG% in those situations. 🎯🏀
-Moderate Hand-Off Action: While often utilized (4.4% possession), his FG% drops to 30%. 📉
-Transition Play: Struggles in transition with just a 21.2% FG% here. We can exploit his weaknesses in quick breaks. 🚀
-P&R Ball Handler: Not highly effective (23.8% FG%) but can still create opportunities.
-Defensive Strategies:
-
-Deny Spot-Ups: Close out aggressively and don't let him get open looks. 🚫✋
-Body Up on Cuts: Be physical. Stay alert to deny easy finishes off cuts. 💪🔒
-Force into Transition  where he’s less effective. Utilize  speed to capitalize on his inefficiencies here. 🌪️
-KEY: Sprint back on D, identify him early, and take away those catch-and-shoot opportunities. Make him earn every shot. 🎯💪🚧
+                    Spot-Up Specialist: Nearly 50% of his possessions are spot-ups, scoring at 38.1% efficiency. He can light it up 86th percentile FG shooter 📈🔵
+                    Effective Cutter: Great at capitalizing on cuts with an 85.7% FG% in those situations.
+                    Moderate Hand-Off Action: While often utilized (4.4% possession), his FG% drops to 30%.
+                    Transition Play: Struggles in transition with just a 21.2% FG% here. We can exploit his weaknesses in quick breaks.
+                    P&R Ball Handler: Not highly effective (23.8% FG%) but can still create opportunities.
+                    
+                    Defensive Strategies:
+                    
+                    Deny Spot-Ups: Close out aggressively and don't let him get open looks.
+                    Body Up on Cuts: Be physical. Stay alert to deny easy finishes off cuts.
+                    Force into Transition where he’s less effective. Utilize speed to capitalize on his inefficiencies here.
+                    KEY: Sprint back on D, identify him early, and take away those catch-and-shoot opportunities. Make him earn every shot.
                 """}
 # Define the function to get the scouting report
 
