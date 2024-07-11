@@ -19,13 +19,6 @@ st.sidebar.selectbox("Select a page", ["Current", "Beta", "Alpha"])
 client = OpenAI(api_key=st.secrets["open_ai"])
 
 
-# Define the list of questions
-questions = [
-    "What is the player's standout characteristics?",
-    "How to play against him?",
-    "player notes?",
-   
-]
 
 
 # Define the function to get the scouting report
@@ -99,7 +92,7 @@ def get_scouting_report(_llm, model, player, temperature):
             },
             {
                 "role": "user",
-                "content": player_boxscore + " " + questions[0]   + " " + questions[1] + " " + questions[2]
+                "content": player_boxscore
             },
             
         ],
