@@ -10,7 +10,7 @@ st.sidebar.markdown('This is the Current Branch')
      
     
      
-st.sidebar.selectbox("Select a page", ["Current", "Beta", "Alpha", "Plain Jane"])
+st.sidebar.selectbox("Select a page", ["Current", "Beta", "Alpha", "Plain Jane", "Money Ranger"])
 
 ################ PAGE STARTS HERE ############################## 
 
