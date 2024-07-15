@@ -22,7 +22,6 @@ client = OpenAI(api_key=st.secrets["open_ai"])
 
 
 # Define the function to get the scouting report
-@st.cache_data()
 def get_scouting_report(_llm, model, player, temperature):
     chat_completion = _llm.chat.completions.create(
         model=model,
