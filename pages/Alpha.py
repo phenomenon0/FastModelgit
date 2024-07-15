@@ -27,6 +27,7 @@ def get_scouting_report(_llm, model, player, temperature):
     chat_completion = _llm.chat.completions.create(
         model=model,
         top_p =1,
+     seed= 42,
         messages=[
             {
                     "role": "system",
