@@ -120,7 +120,7 @@ def get_scouting_report(_llm, model, player, temperature):
     return chat_completion.choices[0].message.content
 
 
-temperature = st.slider("Changes behavior- higher is more random🎲", min_value=0.5, max_value=2.0, value=1.5, step=0.1)
+temperature = st.slider("Changes behavior- higher is more random🎲", min_value=0.5, max_value=2.0, value=0.7, step=0.1)
 
 
 if st.button("Generate Scouting Report from input"):
