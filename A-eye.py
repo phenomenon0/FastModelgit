@@ -27,6 +27,7 @@ prompts = {"stable": """System Prompt:
                      Avoid listing raw stats upfront. Instead, embed the statistics within short concise  sentences.
                      Highlight only 5 of the most important statistics -
                      Write a 5 bullet point on defensive strategies to play against them - 1.5line max 
+                     mention at least 1 statistic that supports any statement being made
                     In simple english and concise these are matchday instructions  make 'em lean 
                     
                   this an example of user prompt and assistant response
