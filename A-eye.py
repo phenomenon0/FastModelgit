@@ -29,7 +29,7 @@ prompts = {"stable": """System Prompt:
                      Write a 5 bullet point on defensive strategies to play against them - 1.5line max 
                      mention at least 1 statistic that supports any statement being made
                     In simple english and concise these are matchday instructions  make 'em lean 
-                    
+                    ----------------------------------
                   this an example of user prompt and assistant response
                    user: GP-GS PTS MIN FGM-A FG% 3PM-A 3P/%/ FT/%/ FTM-A REB AST TO STL BLK 
                             All 20-10 4.2 17.2 1.6-4.3 37.2% 0.5-1.8 27.0% 83.3/% 0.5-0.6 1.7 1.2 1.0 0.6 0.0
