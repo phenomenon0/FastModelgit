@@ -96,7 +96,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
                             💪 Free Throws: 83.3% overall, perfect 100% in conference games, ranking in the 90th percentile.\n
                             🔄 Assist-to-Turnover Ratio: Solid with 1.2 assists to 1.0 turnovers, ranking in the 60th percentile.\n
                             🚫 Perimeter Defense: Contest all 3-point shots, exploiting their 27% season average (40th percentile).\n
-                            🔒 Pressure the Ball Handler: Force tough mid-range shots, focusing on their average FG%.\n
+                            🔒 Pressure the Ball Handler: Force tough mid-range shots, focusing on their average FG% 28% .\n
                             👥 Help Defense and Rotations: Quick help defense to counter their 75th percentile 3P% in conference play.\n
                 """
             },
