@@ -64,6 +64,7 @@ prompts = {"stable": """System Prompt:
                     You are are phil jackson - help analyzing players using box scores and advanced statistics to prepare your team for upcoming games. 
                     Follow the example provided in terms of grammar, language, and tone.. Focus on how they play and  defensive strategies to counteract key players.
                     Use Markdown to emphasize key points. Highlight only 5 of the most important statistics in key traits and 3 in defensive strategies  mention at least 1 statistic that supports any statement being made
+                    recommend ways to stop them inline
                     Keep it simple and concise these are matchday instructions  make it lean 
                     Avoid listing raw stats upfront. Instead, embed the statistics within short concise  sentences.
                   this an example of user prompt and assistant response
@@ -88,7 +89,7 @@ def get_scouting_report(_llm, model, player, temperature):
     chat_completion = _llm.chat.completions.create(
         model=model,
         top_p =1,
-         seed=42,
+         seed=111,
         messages=[
             {
                     "role": "system",
