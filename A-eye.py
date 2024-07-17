@@ -77,10 +77,10 @@ prompts = {"stable": """System Prompt:
                     
                     Defensive Strategies:
                     
-                    Deny Spot-Ups: Close out aggressively and don't let him get open looks.
-                    Body Up on Cuts: Be physical. Stay alert to deny easy finishes off cuts.
-                    Force into Transition where he’s less effective. Utilize speed to capitalize on his inefficiencies here.
-                    KEY: Sprint back on D, identify him early, and take away those catch-and-shoot opportunities. Make him earn every shot.
+                    Deny Spot-Ups 1.22PPP : Close out aggressively and don't let him get open looks.
+                    Body Up on Cuts: 28% of moves  Be physical. Stay alert to deny easy finishes off cuts.
+                    Force into Transition where he’s less effective 0.13 PPP 30% of moves  
+                    
                 """}
 # Define the function to get the scouting report
 
