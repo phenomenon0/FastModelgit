@@ -35,7 +35,7 @@ def get_scouting_report(_llm, model, player, temperature,seed):
                      Focus on how they play 
                      Avoid listing raw stats upfront. Instead, embed the statistics within short concise  sentences.
                      Highlight only 9  of the most important statistics - 1 line max 
-                    
+                    everyline must have a statistic to back it up
                     In simple english and concise these are matchday instructions  make 'em lean 
                     
                   this an example of user prompt and assistant response
