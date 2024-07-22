@@ -70,7 +70,8 @@ Example Output:
 - Playmaking: 4.2 APG with 2.9 TO (AST% 27.9%, 96th percentile; TO% 18.6%, 25th percentile).
 - Gets to the line frequently: 4.3 FTA per game, converting at 78.6% (71st percentile).
 
- Format the report using short, concise bullet points as in example . Use percentile rankings where relevant to provide context. Focus on the most significant aspects of the player's game based on the data provided.
+ Format the report using short, concise bullet points as in example output -- 
+ focus on oneline type answers not header and text . Use percentile rankings where relevant to provide context. Focus on the most significant aspects of the player's game based on the data provided.
 Now, analyze the provided player data and generate a similar breakdown, focusing on the most relevant aspects based on the guidelines above.
 """
             },
