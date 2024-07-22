@@ -39,7 +39,7 @@ FORMAT:
 
 ## Player Breakdown
 
-• [adjective] usage [POSITION] ([USG%] percentile) who plays [adjective] minutes ([MPG] mpg) scoring [PPG] PPG ([PPG] percentile) on [adjective] [TS%] TS% ([TS%] percentile)
+• [adjective] usage [POSITION] ([USG%] ) who plays [adjective] minutes ([MPG] mpg) scoring [PPG] PPG ([PPG] percentile) on [adjective] [TS%] TS% ([TS%] percentile)
 
 • More likely to shoot from the [outside/inside] ([2P-R or 3P-R]% [2P-R or 3P-R]) where he/she shoots a [adjective] [2P% or 3P%] [2P% or 3P%]
 
