@@ -35,7 +35,7 @@ Use the provided statistics to create a concise scouting report following these 
 
 FORMAT:
 - Use ONLY bullet points, no subheadings or paragraphs.
-- Each bullet point should be a single line or two , starting with "•".
+- Each bullet point should be a sentence , starting with "•".
 - Include 5-7 bullet points total.
 - Use percentile rankings in parentheses where relevant.
 
