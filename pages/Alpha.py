@@ -71,7 +71,8 @@ Example Output:
 - Gets to the line frequently: 4.3 FTA per game, converting at 78.6% (71st percentile).
 
  Format the report using short, concise bullet points as in example output -- 
- focus on oneline type answers not header and text . Use percentile rankings where relevant to provide context. Focus on the most significant aspects of the player's game based on the data provided.
+ focus on one line type answers not header and text .  Use markdown for emphasis.
+ Use percentile rankings where relevant to provide context. Focus on the most significant aspects of the player's game based on the data provided.
 Now, analyze the provided player data and generate a similar breakdown, focusing on the most relevant aspects based on the guidelines above.
 """
             },
