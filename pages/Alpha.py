@@ -43,7 +43,7 @@ FORMAT:
 
 • More likely to shoot from the [outside/inside] ([2P-R or 3P-R]% [2P-R or 3P-R]) where he/she shoots a [adjective] [2P% or 3P%] [2P% or 3P%]
 
-• Most commonly used in [synergy play type with highest % Time], where he/she produces [PPP] PPP
+• Most commonly used in [synergy play type with highest % Time, and % Time ], where he/she produces [PPP] PPP
   (Never mention Miscellaneous Play type)
 
 • [adjective] rebounding [POSITION] especially on [Defense/Offense] averaging [ORB/G or DRB/G] ([DRB or ORB] percentile)
