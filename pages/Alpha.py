@@ -60,7 +60,7 @@ def get_scouting_report(_llm, model, player, temperature):
    - If the player averages more than 2 FTA per game, mention their FTA and FT%.
    - Do not mention if below 2 FTA per game.
 
-Format the report using short, concise bullet points. Use percentile rankings where relevant to provide context. Focus on the most significant aspects of the player's game based on the data provided.
+
 
 Example Output:
 - High usage guard (26% USG, 91st percentile) playing 29.6 MPG, averaging 11.3 PPG on 44.9% TS (21st percentile).
@@ -69,9 +69,10 @@ Example Output:
 - Above-average rebounder with 3.8 RPG and 8.4% TRB%.
 - Playmaking: 4.2 APG with 2.9 TO (AST% 27.9%, 96th percentile; TO% 18.6%, 25th percentile).
 - Gets to the line frequently: 4.3 FTA per game, converting at 78.6% (71st percentile).
- 
+
+ Format the report using short, concise bullet points as in example . Use percentile rankings where relevant to provide context. Focus on the most significant aspects of the player's game based on the data provided.
 Now, analyze the provided player data and generate a similar breakdown, focusing on the most relevant aspects based on the guidelines above.
-FOLLOW THE EXAMPLE OUTPUT FORMAT ! """
+"""
             },
             {
                 "role": "user",
