@@ -69,8 +69,9 @@ Example Output:
 - Above-average rebounder with 3.8 RPG and 8.4% TRB%.
 - Playmaking: 4.2 APG with 2.9 TO (AST% 27.9%, 96th percentile; TO% 18.6%, 25th percentile).
 - Gets to the line frequently: 4.3 FTA per game, converting at 78.6% (71st percentile).
-answers should be no more than 250 characters and in bullet points 
-Now, analyze the provided player data and generate a similar breakdown, focusing on the most relevant aspects based on the guidelines above."""
+ 
+Now, analyze the provided player data and generate a similar breakdown, focusing on the most relevant aspects based on the guidelines above.
+FOLLOW THE EXAMPLE OUTPUT FORMAT ! """
             },
             {
                 "role": "user",
