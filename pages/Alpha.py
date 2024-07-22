@@ -30,57 +30,35 @@ def get_scouting_report(_llm, model, player, temperature):
         messages=[
             {
                     "role": "system",
-                    "content":"""  You are an expert basketball scout analyzing players using box scores and synergy stats to prepare your team for upcoming games. Use the provided statistics to create a concise scouting report following these guidelines:
-Use the provided statistics to create a concise scouting report following these strict guidelines:
+                    "content":"""You are an expert basketball scout analyzing players using box scores and synergy stats. Create a concise scouting report following these strict guidelines:
 
 FORMAT:
-- Use ONLY bullet points, no subheadings or paragraphs.
-- Each bullet point should be a sentence , starting with "•".
-- Include 5-7 bullet points total.
-- Use percentile rankings in parentheses where relevant.
+• Use ONLY bullet points, no subheadings or paragraphs.
+• Each bullet point should start with "•".
+• Follow the exact structure provided for each bullet point.
 
-1. Usage and Overall Impact:
-   - Comment on the player's usage (USG%), minutes per game, and points per game.
-   - Mention their shooting efficiency using eFG% or TS%.
-   - Include this information for all players, regardless of their role.
+## Player Breakdown
 
-2. Scoring Profile:
-   - Compare 3P-R and 2P-R to determine their primary shooting area.
-   - Highlight their shooting percentage from their most frequent shot location.
-   - Identify the play type with the highest %Time and report its PPP (Points Per Possession).
-   - Include this information for all players.
+• [adjective] usage [POSITION] ([USG%] percentile) who plays [adjective] minutes ([MPG] mpg) scoring [PPG] PPG ([PPG] percentile) on [adjective] [TS%] TS% ([TS%] percentile)
 
-3. Rebounding:
-   - Mention defensive rebounding if over 3 DRB per game.
-   - Mention offensive rebounding if over 1 ORB per game.
-   - Always include the overall Rebound %.
-   - Include this information for all players.
+• More likely to shoot from the [outside/inside] ([2P-R or 3P-R]% [2P-R or 3P-R]) where he/she shoots a [adjective] [2P% or 3P%] [2P% or 3P%]
 
-4. Playmaking (only if USG% > 10%):
-   - Discuss assists and turnovers if the player has significant usage.
+• Most commonly used in [synergy play type with highest % Time], where he/she produces [PPP] PPP
+  (Never mention Miscellaneous Play type)
 
-5. Defense:
-   - Highlight steals or blocks only if the player is in the top 20 percentile.
-   - Ensure the frequency is high before mentioning.
+• [adjective] rebounding [POSITION] especially on [Defense/Offense] averaging [ORB/G or DRB/G] ([DRB or ORB] percentile)
+  (Include DRB/G if > 3, ORB/G if > 1. Always mention ORB% and DRB%)
 
-6. Free Throw Shooting:
-   - If the player averages more than 2 FTA per game, mention their FTA and FT%.
-   - Do not mention if below 2 FTA per game.
+• [adjective] facilitator who averages [APG] APG ([APG] percentile) with a [AST%] AST% ([AST%] percentile) and turns it over [adjective] with [TO/G] TO/G ([TO/G] percentile)
+  (Only include if USG% > 10%)
 
+• [adjective] defensively, averaging [STL/G or BLK/G] [STL/G or BLK/G]
+  (Only include if STL/G or BLK/G is in 80th percentile or above)
 
+• [adjective] free throw shooter at [FT%] ([FT%] percentile) who gets to the line [adverb] at [FT-R] FT-R
+  (Only include if player averages more than 2 FTA per game)
 
-Example Output:
-- High usage guard (26% USG, 91st percentile) playing 29.6 MPG, averaging 11.3 PPG on 44.9% TS (21st percentile).
-- Primary scorer inside the arc (77.3% 2P-R), shooting 45.1% on 2-pointers.
-- Most effective as P&R Ball Handler (24% of possessions, 0.678 PPP).
-- Above-average rebounder with 3.8 RPG and 8.4% TRB%.
-- Playmaking: 4.2 APG with 2.9 TO (AST% 27.9%, 96th percentile; TO% 18.6%, 25th percentile).
-- Gets to the line frequently: 4.3 FTA per game, converting at 78.6% (71st percentile).
-
- Format the report using short, concise bullet points as in example output -- 
- focus on one line type answers not header and text .  Use markdown for emphasis.
- Use percentile rankings where relevant to provide context. Focus on the most significant aspects of the player's game based on the data provided.
-Now, analyze the provided player data and generate a similar breakdown, focusing on the most relevant aspects based on the guidelines above.
+Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria.​​​​​​
 """
       
             },
