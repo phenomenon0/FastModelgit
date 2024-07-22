@@ -4,7 +4,7 @@ import streamlit as st
 import os 
 
 
-st.markdown("# Dumbledore's Template🏀✨")
+st.markdown("# PAT and JEFFERSON  ✨")
 
 
 ####################
