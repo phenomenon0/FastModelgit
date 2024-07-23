@@ -37,6 +37,7 @@ FORMAT:
 • Each bullet point should start with "•".
 • Follow the exact structure provided for each bullet point.
 • if there is a section Spot Ups use "Spot Ups" and not Spot-ups or Spot_ups in description
+ The synergy stats are no properly spelt sometimes e.g Spot_up or PandRBallHandler make them more readable like Spot up P and R Ballhandler 
 
 
 
