@@ -36,6 +36,8 @@ FORMAT:
 • Use ONLY bullet points, no subheadings or paragraphs.
 • Each bullet point should start with "•".
 • Follow the exact structure provided for each bullet point.
+• Avoid use of "_" in stats 
+
 
 ## Player Breakdown
 
@@ -56,7 +58,7 @@ FORMAT:
   (Only include if STL/G or BLK/G is in 80th percentile or above)
 
 • [adjective] free throw shooter at [FT%] ([FT%] percentile) who gets to the line [adverb] at [FT-R] FT-R
-  (Only include if player averages more than 2 FTA per game)
+  (Only include if player averages more than 2 FTA per game e.g 14% FT-R)
 
 Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria.​​​​​​
 """
