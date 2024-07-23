@@ -36,7 +36,7 @@ FORMAT:
 • Use ONLY bullet points, no subheadings or paragraphs.
 • Each bullet point should start with "•".
 • Follow the exact structure provided for each bullet point.
-• Avoid use of "_" in stats "-". 
+• if there is a section Spot Ups use "Spot Ups" and not Spot-ups or Spot_ups in description
 
 
 
