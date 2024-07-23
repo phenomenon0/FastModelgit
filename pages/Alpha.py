@@ -43,14 +43,14 @@ FORMAT:
 
 ## Player Breakdown
 
-• [adjective] usage [POSITION] ([USG%] ) who plays [adjective] minutes ([MPG] mpg) scoring [PPG] PPG ([PPG] percentile) on [adjective] [TS%] TS% ([TS%] percentile)
+• [adjective] usage [Position] ([USG%] ) who plays [adjective] minutes ([MPG] mpg) scoring [PPG] PPG ([PPG] percentile) on [adjective] [TS%] TS% ([TS%] percentile)
 
 • More likely to shoot from the [outside/inside] ([2P-R or 3P-R]% [2P-R or 3P-R]) where he/she shoots a [adjective] [2P% or 3P%] [2P% or 3P%]
 
 • Most commonly used in [synergy play type with highest % Time, and % Time ], where he/she produces [PPP] PPP
   (Never mention Miscellaneous Play type)
 
-• [adjective] rebounding [POSITION] especially on [Defense/Offense] averaging [ORB/G or DRB/G] ([DRB or ORB] percentile)
+• [adjective] rebounding [Position] especially on [Defense/Offense] averaging [ORB/G or DRB/G] ([DRB or ORB] percentile)
   (Include DRB/G if > 3, ORB/G if > 1. Always mention ORB% and DRB%)
 
 • [adjective] facilitator who averages [APG] APG ([APG] percentile) with a [AST%] AST% ([AST%] percentile) and turns it over [adjective] with [TO/G] TO/G ([TO/G] percentile)
