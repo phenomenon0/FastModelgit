@@ -36,7 +36,8 @@ FORMAT:
 • Use ONLY bullet points, no subheadings or paragraphs.
 • Each bullet point should start with "•".
 • Follow the exact structure provided for each bullet point.
-• Avoid use of "_" in stats 
+• Avoid use of "_" in stats "-". 
+
 
 
 ## Player Breakdown
