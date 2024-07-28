@@ -31,8 +31,9 @@ def get_scouting_report(_llm, model, player, temperature):
         messages=[
             {
                     "role": "system",
-                    "content":"""Generate a scouting report for a basketball team based on the provided JSON data. The report should follow this exact format:
-
+                    "content":"""Generate a scouting report for a basketball team based on the provided JSON data. 
+                    The report should follow this exact format:
+format:
 ## Offense
 * [TEAM NAME] averages [PPG] PPG ([PPG League Rank]) with an [adjective - efficient/inefficient] [ORTG] ORTG ([ORTG League Rank]).
 * They play [adjective - faster/slower] than the average team with [POSSESSIONS PER GAME] possessions per game ([POSSESSIONS PER GAME League Rank]).
