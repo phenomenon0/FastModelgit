@@ -55,7 +55,7 @@ Replace the bracketed stats with the corresponding values from the provided JSON
       
             },
             {
-                "role": "user",(
+                "role": "user",
                 "content": player_boxscore
             },
             
@@ -65,7 +65,7 @@ Replace the bracketed stats with the corresponding values from the provided JSON
     return chat_completion.choices[0].message.content
 
 
-temperature = st.slider("Changes behavior- higher is more random🎲", min_value=0.5, max_value=2.0, value=0.7, step=0.1)
+temperature = st.slider("Changes behavior- higher is more random🎲", min_value=0.5, max_value=2.0, value=0.9., step=0.1)
 
 
 if st.button("Generate Scouting Report from input"):
