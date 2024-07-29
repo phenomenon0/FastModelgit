@@ -47,9 +47,9 @@ def get_scouting_report(_llm, model, player, temperature):
 * Most of their possessions end in [Synergy Play Type with most % Time] where they score at a rate of [Synergy Play Type PPP]
   * Example:
     * Most of their possessions end in spot up attempts where they are just a bit better than average with a 0.970 PPP (26.3% of time).
-* [TEAM NAME] is a [adjective] rebounding team with a [Team ORB%] [Team ORB% League Rank] and a [Team DRB%] [Team DRB% League Rank]
-  * Example:
-    * Illinois is an elite rebounding team with a 35.6% ORB% (21st) and a 73.7% DRB (74th).
+*[TEAM NAME] is a [adjective] rebounding on the offensive glass team, averaging [Team ORG/G] [Team ORB/G League Rank] and allowing opponents an average of [Opponent DRB/G] [Opponent DRB/G League Rank]
+  *Example:
+   *Illinois is an elite rebounding team on the offensive glass, averaging 12.8 OR/G (29th) and allowing opponents an average of 23.1 DR/G (59th)
 * They are [very/not very] reliant on assists to score with a [Team AST%] [Team AST% League Rank] and do a [adjective] job of taking care of the basketball, turning it over [AST/Game] [AST/Game League Rank]
   * Example:
     * They are not very reliant on an assist to score with only a 45.8% AST% (296th) but do a good job of taking care of the basketball only turning it over 10.6x per game (72nd).
@@ -63,9 +63,9 @@ def get_scouting_report(_llm, model, player, temperature):
 * Their defense does a [adjective] job of limiting opponents to a [adjective] [2P-R or 3P-R, whichever is lowest]. Their opponents convert [Opponent 2P%] of their 2s [Opponent 2P% League Rank] and [Opponent 3P%] of their 3s [Opponent 3P% League Rank] 
   * Example:
     * Their defense does a great job of limiting teams to a very low 28.3% 3P-R (7th) and forcing teams to take a lot of 2s with a 71.7% 2P-R. Their opponents convert 46.8% of their 2P% (43) and 34.1% of their 3P% (215).
-* [TEAM NAME] is a [adjective] rebounding team, with their opponents grabbing a [adjective] [Opponent ORB%] [Opponent ORB% League Rank] and [Opponent DRB%] [Opponent DRB% League Rank]
+* [TEAM NAME] is a [adjective] defensive rebounding team, grabbing [DRB/G] [DRB/G League Rank] and allowing opponents to grab [Opponent DRB/G] [Opponent DRB/G League Rank]
   * Example:
-    * Illinois is an elite rebounding team holding their opponents to a low 26.3% ORB (74) and 64.4% DRB (21)
+    * Illinois is an elite defensive rebounding team, grabbing 28.1 DRB/G (16th) and allowing opponents to grab 10.0 ORB/G (166th)
 * They [force, hold = good, allow = bad] opponents into a [Opponent AST%] [Opponent AST% League Rank] and force turnovers at a [Opponent TO%] [Opponent TO% League Rank]
   * Example:
     * They force opponents into a 44.1% AST% (37) but rarely force any turnovers with a 12.3% TO% (360).
