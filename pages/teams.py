@@ -134,7 +134,7 @@ if st.button("Use Sample Data to Generate"):
         st.session_state.current_index = (st.session_state.current_index + 1) % len(data)
     player_boxscore = str(sample_data[st.session_state.current_index])
     scouting_report = get_scouting_report(client, "gpt-4o", player_boxscore, temperature)
-    st.write(scouting_report)
+    scouting_report
     st.write("Data fed:" )
     st.code(sample_data[st.session_state.current_index])
     st.session_state.current_index = (st.session_state.current_index + 1) % len(data)
