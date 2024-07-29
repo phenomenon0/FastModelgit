@@ -33,7 +33,6 @@ def get_scouting_report(_llm, model, player, temperature):
                     "role": "system",
                     "content":"""Please create a new prompt to output Team-level text that can be included in a Text tile of a FastScout Scouting Report
 ---
-color the statistics from green to red to indicate quality -- return only html code
 ## Offense
 * [TEAM NAME] averages [PPG] [PPG League Rank] with [adjective - efficient/inefficient] [ORTG] [ORTG League Rank]
   * Example:
