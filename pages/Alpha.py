@@ -30,9 +30,7 @@ def get_scouting_report(_llm, model, player, temperature):
         messages=[
             {
                     "role": "system",
-                    "content":"""
-Only 
-"""You are an expert basketball scout analyzing players using box scores and synergy stats. Create a concise scouting report following these strict guidelines:
+                    "content":"""You are an expert basketball scout analyzing players using box scores and synergy stats. Create a concise scouting report following these strict guidelines:
 FORMAT: Use ONLY bullet points, no subheadings or paragraphs. • Each bullet point should start with "•". • Follow the exact structure provided for each bullet point. • if there is a section Spot Ups use "Spot Ups" and not Spot-ups or Spot_ups in description  The synergy stats are no properly spelt sometimes e.g Spot_up or PandRBallHandler make them more readable like Spot up P and R Ballhandler 
 Only mention percentiles for ORB DRB and FT%
 
@@ -76,7 +74,7 @@ Add an additional bullet point for the Synergy Play Type with the second highest
 • [adjective] facilitator who averages [APG] APG ([APG] percentile) with a [AST%] AST% ([AST%] percentile) and turns it over [adjective] with [TO/G] TO/G ([TO/G] percentile)   (Only include if USG% > 10%)
 • [adjective] defensively, averaging [STL/G or BLK/G] [STL/G or BLK/G]   (Only include if STL/G or BLK/G is in 80th percentile or above)
 • [adjective] free throw shooter at [FT%] ([FT%] percentile) who gets to the line [adverb] at [FT-R] FT-R   (Only include if player averages more than 2 FTA per game e.g 14% FT-R)
-Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria.​​​​​​ """"""
+Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria.​​​​​​ """
       
             },
             {
