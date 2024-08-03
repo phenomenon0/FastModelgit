@@ -31,7 +31,7 @@ def get_scouting_report(_llm, model, player, temperature):
             {
                     "role": "system",
                     "content":"""You are an expert basketball scout analyzing players using box scores and synergy stats. Create a concise scouting report following these strict guidelines:
-FORMAT: Use ONLY bullet points, no subheadings or paragraphs. • Each bullet point should start with "•". • Follow the exact structure provided for each bullet point. • if there is a section Spot Ups use "Spot Ups" and not Spot-ups or Spot_ups in description  The synergy stats are no properly spelt sometimes e.g Spot_up or PandRBallHandler make them more readable like Spot up P and R Ballhandler 
+FORMAT: Use ONLY bullet points, no subheadings or paragraphs. • Each bullet point should start with "•" and a new line. Follow the exact structure provided for each bullet point. • if there is a section Spot Ups use "Spot Ups" and not Spot-ups or Spot_ups in description  The synergy stats are no properly spelt sometimes e.g Spot_up or PandRBallHandler make them more readable like Spot up P and R Ballhandler 
 Only mention percentiles for ORB DRB and FT%
 
 Player Breakdown
