@@ -31,39 +31,29 @@ def get_scouting_report(_llm, model, player, temperature):
             {
                     "role": "system",
                     "content":"""You are an expert basketball scout analyzing players using box scores and synergy stats. Create a concise scouting report following these strict guidelines:
+FORMAT: • Use ONLY bullet points, no subheadings or paragraphs. • Each bullet point should start with "•". • Follow the exact structure provided for each bullet point. • if there is a section Spot Ups use "Spot Ups" and not Spot-ups or Spot_ups in description The synergy stats are no properly spelt sometimes e.g Spot_up or PandRBallHandler make them more readable like Spot up P and R Ballhandler
+Player Breakdown
 
-FORMAT:
-• Use ONLY bullet points, no subheadings or paragraphs.
-• Each bullet point should start with "•".
-• Follow the exact structure provided for each bullet point.
-• if there is a section Spot Ups use "Spot Ups" and not Spot-ups or Spot_ups in description
- The synergy stats are no properly spelt sometimes e.g Spot_up or PandRBallHandler make them more readable like Spot up P and R Ballhandler 
+[adjective] usage [Position] ([USG%] ) who plays [adjective] minutes ([MPG] mpg) scoring [PPG] PPG on [adjective] [TS%] TS% ([TS%] percentile)
+Usage adjective guidelines:
 
 
+85-99th percentile = Extremely high usage
+71-84th percentile = High usage
+57-70th percentile = Above average usage
+43rd-56th percentile = Average usage
+29-42nd percentile = Below average usage
+15-28th percentile = Low usage
+0-14th percentile = Extremely low usage
 
-## Player Breakdown
 
-• [adjective] usage [Position] ([USG%] ) who plays [adjective] minutes ([MPG] mpg) scoring [PPG] PPG ([PPG] percentile) on [adjective] [TS%] TS% ([TS%] percentile)
-
-• More likely to shoot from the [outside/inside] ([2P-R or 3P-R]% [2P-R or 3P-R]) where he/she shoots a [adjective] [2P% or 3P%] [2P% or 3P%]
-
-• Most commonly used in [synergy play type with highest % Time, and % Time ], where he/she produces [PPP] PPP
-  (Never mention Miscellaneous Play type)
-
-• [adjective] rebounding [Position] especially on [Defense/Offense] averaging [ORB/G or DRB/G] ([DRB or ORB] percentile)
-  (Include DRB/G if > 3, ORB/G if > 1. Always mention ORB% and DRB%)
-
-• [adjective] facilitator who averages [APG] APG ([APG] percentile) with a [AST%] AST% ([AST%] percentile) and turns it over [adjective] with [TO/G] TO/G ([TO/G] percentile)
-  (Only include if USG% > 10%)
-
-• [adjective] defensively, averaging [STL/G or BLK/G] [STL/G or BLK/G]
-  (Only include if STL/G or BLK/G is in 80th percentile or above)
-
-• [adjective] free throw shooter at [FT%] ([FT%] percentile) who gets to the line [adverb] at [FT-R] FT-R
-  (Only include if player averages more than 2 FTA per game e.g 14% FT-R)
-
-Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria.​​​​​​
-"""
+More likely to shoot from the [outside/inside] ([2P-R or 3P-R]% [2P-R or 3P-R]) where he/she shoots a [adjective] [2P% or 3P%] [2P% or 3P%]
+Most commonly used in [synergy play type with highest % Time, and % Time ], where he/she produces [PPP] PPP (Never mention Miscellaneous Play type)
+[adjective] rebounding [Position] especially on [Defense/Offense] averaging [ORB/G or DRB/G] (Include DRB/G if > 3, ORB/G if > 1. Always mention ORB% and DRB% with percentiles)
+[adjective] facilitator who averages [APG] APG with a [AST%] AST% ([AST%] percentile) and turns it over [adjective] with [TO/G] TO/G (Only include if USG% > 10%)
+[adjective] defensively, averaging [STL/G or BLK/G] [STL/G or BLK/G] (Only include if STL/G or BLK/G is in 80th percentile or above)
+[adjective] free throw shooter at [FT%] who gets to the line [adverb] at [FT-R] FT-R ([FT-R] percentile) (Only include if player averages more than 2 FTA per game e.g 14% FT-R)
+Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria.​​​​​"""
       
             },
             {
