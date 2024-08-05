@@ -31,7 +31,7 @@ def get_scouting_report(_llm, model, player, temperature):
             {
                     "role": "system",
                     "content":"""You are an expert basketball scout analyzing players using box scores and synergy stats. Create a concise scouting report following these strict guidelines:
-FORMAT: Use ONLY bullet points, no subheadings or paragraphs. • Each bullet point should start with a new line. Follow the exact structure provided for each bullet point. • if there is a section Spot Ups use "Spot Ups" and not Spot-ups or Spot_ups in description  The synergy stats are no properly spelt sometimes e.g Spot_up or PandRBallHandler make them more readable like Spot up P and R Ballhandler 
+FORMAT:Use ONLY bullet points, no subheadings or paragraphs.• Each bullet point should start with a new line. Follow the exact structure provided for each bullet point.• if there is a section Spot Ups use "Spot Ups" and not Spot-ups or Spot_ups in description The synergy stats are no properly spelt sometimes e.g Spot_up or PandRBallHandler make them more readable like Spot up P and R Ballhandler 
 Only mention percentiles for ORB DRB and FT%
 
 Player Breakdown
@@ -46,7 +46,7 @@ Adjective guide for usage:	•	85-99th percentile Extremely high usage
 * 0-14th percentile = Extremely low usage
 
 • More likely to shoot from the [outside/inside] ([2P-R or 3P-R]% [2P-R or 3P-R]) where he/she shoots a [adjective] [2P% or 3P%] [2P% or 3P%]
-• Most commonly used in synergy play type with highest % Time,  where he/she produces [PPP] PPP phrase it like    (Never mention Miscellaneous Play type) 
+• Most commonly used in synergy play type with highest % Time,  where he/she produces [PPP] PPP phrase it like   (Never mention Miscellaneous Play type) 
 * Transition = Gets most of [his/her] shots in transition [% Time], where [he/she] produces [PPP]
 * Post-Up = Gets most of [his/her] shots in the post [% Time], where [he/she] produces [PPP]
 * Cut = Gets most of [his/her] shots cutting off the ball [% Time], where [he/she] produces [PPP]
@@ -70,11 +70,11 @@ Add an additional bullet point for the Synergy Play Type with the second highest
 	•	Off Screen: Often gets shots coming around off-ball screens ([% Time]), producing [PPP].
 	•	Offensive Rebounds (Put Backs): Frequently gets shots from put backs on the offensive glass ([% Time]), producing [PPP].
 	•	Handoffs: Often gets shots in off handoffs ([% Time]), producing [PPP].
-• [adjective] rebounding [Position] especially on [Defense/Offense] averaging [ORB/G or DRB/G] ([DRB or ORB] percentile)   (Include DRB/G if > 3, ORB/G if > 1. Always mention ORB% and DRB%)
-• [adjective] facilitator who averages [APG] APG ([APG] percentile) with a [AST%] AST% ([AST%] percentile) and turns it over [adjective] with [TO/G] TO/G ([TO/G] percentile)   (Only include if USG% > 10%)
-• [adjective] defensively, averaging [STL/G or BLK/G] [STL/G or BLK/G]   (Only include if STL/G or BLK/G is in 80th percentile or above)
-• [adjective] free throw shooter at [FT%] ([FT%] percentile) who gets to the line [adverb] at [FT-R] FT-R   (Only include if player averages more than 2 FTA per game e.g 14% FT-R)
-Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria.​​​​​​ """
+• [adjective] rebounding [Position] especially on [Defense/Offense] averaging [ORB/G or DRB/G] ([DRB or ORB] percentile)  (Include DRB/G if > 3, ORB/G if > 1. Always mention ORB% and DRB%)
+• [adjective] facilitator who averages [APG] APG ([APG] percentile) with a [AST%] AST% ([AST%] percentile) and turns it over [adjective] with [TO/G] TO/G ([TO/G] percentile)  (Only include if USG% > 10%)
+• [adjective] defensively, averaging [STL/G or BLK/G] [STL/G or BLK/G]  (Only include if STL/G or BLK/G is in 80th percentile or above)
+• [adjective] free throw shooter at [FT%] ([FT%] percentile) who gets to the line [adverb] at [FT-R] FT-R  (Only include if player averages more than 2 FTA per game e.g 14% FT-R)
+Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria.​​​​​​"""
       
             },
             {
