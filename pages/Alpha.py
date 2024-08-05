@@ -42,11 +42,11 @@ FORMAT:
 
 Player Breakdown:
 
-• [adjective] usage [Position] ([USG%]) who plays [adjective] minutes ([MPG] mpg) scoring [PPG] PPG ([PPG] percentile) on [adjective] [TS%] TS% ([TS%] percentile)
+• [adjective] usage [Position] ([USG%]) who plays [adjective] minutes ([MPG] mpg) scoring [PPG] PPG ([PPG] percentile) on [adjective] [TS%] TS% ([TS%] percentile) /n
 
-• More likely to shoot from the [outside/inside] ([2P-R or 3P-R]% [2P-R or 3P-R]) where he/she shoots a [adjective] [2P% or 3P%] [2P% or 3P%]
+• More likely to shoot from the [outside/inside] ([2P-R or 3P-R]% [2P-R or 3P-R]) where he/she shoots a [adjective] [2P% or 3P%] [2P% or 3P%] /n
 
-• Most commonly used in synergy play type with highest % Time, where he/she produces [PPP] PPP (Never mention Miscellaneous Play type)
+• Most commonly used in synergy play type with highest % Time, where he/she produces [PPP] PPP (Never mention Miscellaneous Play type)/n
   * Transition = Gets most of [his/her] shots in transition [% Time], where [he/she] produces [PPP]
   * Post-Up = Gets most of [his/her] shots in the post [% Time], where [he/she] produces [PPP]
   * Cut = Gets most of [his/her] shots cutting off the ball [% Time], where [he/she] produces [PPP]
@@ -58,17 +58,17 @@ Player Breakdown:
   * Offensive Rebounds (Put Backs) = Gets most of [his/her] shots from put backs on the offensive glass [% Time], where [he/she] produces [PPP]
   * Handoffs = Gets most of [his/her] shots in off handoffs [% Time], where [he/she] produces [PPP]
 
-• [Second most common play type]: Also frequently gets shots in [play type] ([% Time]), producing [PPP].
+• [Second most common play type]: Also frequently gets shots in [play type] ([% Time]), producing [PPP]./n
 
-• [adjective] rebounding [Position] especially on [Defense/Offense] averaging [ORB/G or DRB/G] ([DRB or ORB] percentile) (Include DRB/G if > 3, ORB/G if > 1. Always mention ORB% and DRB%)
+• [adjective] rebounding [Position] especially on [Defense/Offense] averaging [ORB/G or DRB/G] ([DRB or ORB] percentile) (Include DRB/G if > 3, ORB/G if > 1. Always mention ORB% and DRB%) /n
 
-• [adjective] facilitator who averages [APG] APG ([APG] percentile) with a [AST%] AST% ([AST%] percentile) and turns it over [adjective] with [TO/G] TO/G ([TO/G] percentile) (Only include if USG% > 10%)
+• [adjective] facilitator who averages [APG] APG ([APG] percentile) with a [AST%] AST% ([AST%] percentile) and turns it over [adjective] with [TO/G] TO/G ([TO/G] percentile) (Only include if USG% > 10%) /n
 
-• [adjective] defensively, averaging [STL/G or BLK/G] [STL/G or BLK/G] (Only include if STL/G or BLK/G is in 80th percentile or above)
+• [adjective] defensively, averaging [STL/G or BLK/G] [STL/G or BLK/G] (Only include if STL/G or BLK/G is in 80th percentile or above)/n
 
-• [adjective] free throw shooter at [FT%] ([FT%] percentile) who gets to the line [adverb] at [FT-R] FT-R (Only include if player averages more than 2 FTA per game e.g 14% FT-R)
+• [adjective] free throw shooter at [FT%] ([FT%] percentile) who gets to the line [adverb] at [FT-R] FT-R (Only include if player averages more than 2 FTA per game e.g 14% FT-R)/n
 
-Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria. Ensure each bullet point is on a new line for better readability."""
+Analyze the provided player data and generate a breakdown strictly adhering to this format. Include only the relevant bullet points based on the player's stats and the given criteria. """
            
             },
             {
