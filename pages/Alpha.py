@@ -30,7 +30,7 @@ def get_scouting_report(_llm, model, player, temperature):
         messages=[
             {
                     "role": "system",
-                    "content":""""""You are an expert basketball scout analyzing players using box scores and synergy stats. Create a concise scouting report following these strict guidelines:
+                    "content":"""You are an expert basketball scout analyzing players using box scores and synergy stats. Create a concise scouting report following these strict guidelines:
 
 FORMAT:
 • Use ONLY bullet points, no subheadings or paragraphs.
