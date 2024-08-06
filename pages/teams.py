@@ -31,7 +31,7 @@ def get_scouting_report(_llm, model, player, temperature):
 * They play [adjective - faster/slower] than the average team with [POSSESSIONS PER GAME] possessions per game [POSSESSIONS PER GAME League Rank]
   * Example:
     * They play faster than the average team with 70.7 possessions per game (98th rank).
-* The [TEAM NICKNAME] take more [2’s/3’s] compared to [3’s/2’s] with a [2P-R/3P-R] and a [2P-R/3P-R]. They are [adjective] inside the arc with a [2P%] [2P% League Rank]. [Adjective] from 3-point territory with a [3P%] [3P% League Rank]
+* The [TEAM NICKNAME] take more [2’s/3’s] compared to [3’s/2’s] with a [2P-R/3P-R] [total 2's/3's] and a [2P-R/3P-R] [total 3's/2's] . They are [adjective] inside the arc with a [2P%] [2P% League Rank]. [Adjective] from 3-point territory with a [3P%] [3P% League Rank]
   * Figure out which is higher, 2P-R or 3P-R and mention that stat first, indicating they take more of one type of shot
   * Example:
     * The Fighting Illini take more 2’s compared to 3’s with a 61.4% 2P-R (218) and a 38.6% 3P-R (145). They are extremely efficient inside the arc with a 54.4% 2P% (44). Slightly better than average from beyond 3 with a 34.9% 3P% (126).
