@@ -23,7 +23,7 @@ def get_scouting_report(_llm, model, player, temperature):
         messages=[
             {
                     "role": "system",
-                    "content":"""
+                    "content":""" Team Analysis
 ## Offense
 * [TEAM NAME] averages [PPG] [PPG League Rank] with [adjective - efficient/inefficient] [ORTG] [ORTG League Rank]
   * Example:
