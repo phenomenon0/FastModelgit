@@ -35,9 +35,9 @@ def get_scouting_report(_llm, model, player, temperature):
   * Figure out which is higher, 2P-R or 3P-R and mention that stat first, indicating they take more of one type of shot
   * Example:
     * The Fighting Illini take more 2’s compared to 3’s with a 61.4% 2P-R (218) and a 38.6% 3P-R (145). They are extremely efficient inside the arc with a 54.4% 2P% (44). Slightly better than average from beyond 3 with a 34.9% 3P% (126).
-* Most of their possessions end in [Synergy Play Type with most % Time] where they score at a rate of [Synergy Play Type PPP]
+* Most of their possessions end in [Synergy Play Type with most % Time] where they score at a rate of [Synergy Play Type PPP] -- add % time context to each stat on this line
   * Example:
-    * Most of their possessions end in spot up attempts where they are just a bit better than average with a 0.970 PPP (26.3% of time).
+    * Most of their possessions end in spot up attempts where they are just a bit better than average with a 0.970 PPP (26.3% of time). 
 *[TEAM NAME] is a [adjective] rebounding on the offensive glass team, averaging [Team ORG/G] [Team ORB/G League Rank] and allowing opponents an average of [Opponent DRB/G] [Opponent DRB/G League Rank]
   *Example:
    *Illinois is an elite rebounding team on the offensive glass, averaging 12.8 OR/G (29th) and allowing opponents an average of 23.1 DR/G (59th)
