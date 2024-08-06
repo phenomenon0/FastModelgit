@@ -31,7 +31,7 @@ def get_scouting_report(_llm, model, player, temperature):
 * They play [adjective - faster/slower] than the average team with [POSSESSIONS PER GAME] possessions per game [POSSESSIONS PER GAME League Rank]
   * Example:
     * They play faster than the average team with 70.7 possessions per game (98th rank).
-* The [TEAM NICKNAME] take more [2’s/3’s] compared to [3’s/2’s] with a [2P-R/3P-R] [total 2's/3's] and a [2P-R/3P-R] [total 3's/2's] . They are [adjective] inside the arc with a [2P%] [2P% League Rank]. [Adjective] from 3-point territory with a [3P%] [3P% League Rank]
+* The [TEAM NICKNAME] take more [2’s/3’s] compared to [3’s/2’s] with a [2P-R/3P-R] [total 2's/3's] and a [2P-R/3P-R] [total 3's/2's] . They are [adjective] inside the arc with a [2P%] [2P% attmempted]. [Adjective] from 3-point territory with a [3P%] [3P% attempted]
   * Figure out which is higher, 2P-R or 3P-R and mention that stat first, indicating they take more of one type of shot
   * Example:
     * The Fighting Illini take more 2’s compared to 3’s with a 61.4% 2P-R (218) and a 38.6% 3P-R (145). They are extremely efficient inside the arc with a 54.4% 2P% (44). Slightly better than average from beyond 3 with a 34.9% 3P% (126).
@@ -51,7 +51,7 @@ def get_scouting_report(_llm, model, player, temperature):
 * The [TEAM NICKNAME] give up [Opponent PPG] [Opponent PPG League Rank] with an average [DRTG] [DRTG League Rank]
   * Example:
     * The Illini give up 73.3 ppg (226) with an average 106.2 DRTG (181)
-* Their defense does a [adjective] job of limiting opponents to a [adjective] [2P-R or 3P-R, whichever is lowest]. Their opponents convert [Opponent 2P%] of their 2s [Opponent 2P% League Rank] and [Opponent 3P%] of their 3s [Opponent 3P% League Rank] 
+* Their defense does a [adjective] job of limiting opponents to a [adjective] [2P-R or 3P-R, whichever is lowest]. Their opponents convert [Opponent 2P%] of their 2s [Opponent 2P% total] and [Opponent 3P%] of their 3s [Opponent 3P% total] 
   * Example:
     * Their defense does a great job of limiting teams to a very low 28.3% 3P-R (7th) and forcing teams to take a lot of 2s with a 71.7% 2P-R. Their opponents convert 46.8% of their 2P% (43) and 34.1% of their 3P% (215).
 * [TEAM NAME] is a [adjective] defensive rebounding team, grabbing [DRB/G] [DRB/G League Rank] and allowing opponents to grab [Opponent DRB/G] [Opponent DRB/G League Rank]
