@@ -5,16 +5,8 @@ import streamlit as st
 import os 
 
 
-st.markdown("# teams 🕵️🕵️‍♂️")
+st.markdown("# teams 🕵️-🕵️‍♂️")
 
-
-####################
-
-
-
-st.sidebar.selectbox("Select a page", ["Current", "Beta", "Alpha"])
-
-################ PAGE STARTS HERE ############################## 
  
 
 client = OpenAI(api_key=st.secrets["open_ai"])
