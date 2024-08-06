@@ -23,8 +23,7 @@ def get_scouting_report(_llm, model, player, temperature):
         messages=[
             {
                     "role": "system",
-                    "content":"""Please create a new prompt to output Team-level text that can be included in a Text tile of a FastScout Scouting Report
----
+                    "content":"""
 ## Offense
 * [TEAM NAME] averages [PPG] [PPG League Rank] with [adjective - efficient/inefficient] [ORTG] [ORTG League Rank]
   * Example:
