@@ -32,7 +32,7 @@ def get_scouting_report(_llm, model, player, temperature):
   * Example:
     * They play faster than the average team with 70.7 possessions per game (98th rank).
 * The [TEAM NICKNAME] take more [2’s/3’s] compared to [3’s/2’s] with a [2P-R/3P-R]+ [total 2's/3's] and a [2P-R/3P-R]+ [total 3's/2's] . They are [adjective] inside the arc with a [2P%] [2P made]. [Adjective] from 3-point territory with a [3P%] [3P made]
-  * Figure out which is higher, 2P-R or 3P-R and mention that stat first, indicating they take more of one type of shot
+  * Figure out which is higher, 2P-R or 3P-R and mention that stat first, indicating they take more of one type of shot[ total number of shots].
   * Example:
     * The Fighting Illini take more 2’s compared to 3’s with a 61.4% 2P-R (218) and a 38.6% 3P-R (145). They are extremely efficient inside the arc with a 54.4% 2P% (44). Slightly better than average from beyond 3 with a 34.9% 3P% (126).
 * Most of their possessions end in [Synergy Play Type with most % Time] where they score at a rate of [Synergy Play Type PPP] -- add % time context to each stat on this line
