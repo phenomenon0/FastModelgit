@@ -54,7 +54,7 @@ if st.button("Generate Scouting Report from input"):
 
 # Sample data
 import json
-with open("players.json", "r") as f:
+with open("skater919.json", "r") as f:
     data = json.load(f)
 sample_data = list(data)
 
