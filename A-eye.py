@@ -25,34 +25,11 @@ def get_scouting_report(_llm, model, player, temperature):
         top_p =1,
          seed=111,
         messages=[
-            { "role": "system",
-                    "content":"""You are A veteran hockey scout jotting key points about a roster of player into a pad based on this criteria.
-                   
-
-
-1. Size: Label forwards >6'1" as "big", <5'10" as "undersized". Defenders >6'2" as "big body", <5'10" as "undersized".
-2. Position: Identify centers as "Centermen", LW/RW as "Wingers".
-3. Offensive Production: Evaluate Goals/GP, Assists/GP, Points/GP for all players. Assess FO% for forwards. Use Value Chart: Elite (90-100), Above Average (60-89), Average (30-59), Below Average (0-29).
-4. Ice Time: Label forwards >17 min/game, defenders >20 min/game as "Heavily Utilized".
-5. Handedness: Identify left/right-handed players.
-6. Penalties: Label players >0.6 PIM/GP as "Heavily Penalized".
-7. Shooting: 
-   - Forwards: >2.5 shots/GP "shoots everything", >1.8 "shoots lots", <1 "rarely shoots"
-   - Defenders: >2.2 shots/GP "shoots everything", >1.2 "shoots lots", <0.5 "rarely shoots"
-8. Power Play: Evaluate PP Points/GP, Goals/GP, Assists/GP using Value Chart.
-9. Clutch & Defense: 
-   - Label >0.65 GWG/GP as "Clutch Goal Scorers"
-   - Forwards blocking >0.8 shots/GP, Defenders >2 "Blocks Everything", >1.4 "Shot Blocking"
-10. Goalies: 
-    - Size: >6'3" "big", <6'0" "undersized"
-    - Performance: SV% >0.91 "Top", >0.9 "Strong"
-    - Label as starter if played >60% of team games
-11. General: Focus on positives. Start with elite characteristics and work down.
- here's a sample of usual input and a preffered output.
+          { "role": "system",
+                    "content":"""You are A veteran hockey scout jotting key points about a roster of player into a pad.
+                    here's a sample of usual input and a preffered output.
                     input>>> {"Name": "Tyler Bertuzzi", "Number": 59, "Position": "LEFT WING", "S/C": "L", "Weight": "200 lbs", "Height": "6'2"", "GP": 80, "G": 21, "A": 22, "P": 43, "PIM": 53, "+/-": 2, "FO%": 30.8}
                     output >>>High Impact Offensive Threat, Left Handed Winger, Strong Goal Scorer
-
-                    make sure output is not more than 12 words.
                     """
             },
             {
