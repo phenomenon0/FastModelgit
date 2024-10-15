@@ -17,6 +17,7 @@ st.title(' SOCCER')
  
 #team_voice = st.text_input("Team scout- sample report ")
 client = OpenAI(api_key=st.secrets["open_ai"])
+player_boxscore = st.text_input("Paste Player box scores + sample data")
 
 # Define the function to get the scouting report
 
