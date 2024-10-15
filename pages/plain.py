@@ -4,7 +4,7 @@ import json
 import streamlit as st
 import os 
 
-st.title(' A Plain Jane ')
+st.title(' SOCCER')
  
 
      
@@ -28,76 +28,23 @@ def get_scouting_report(_llm, model, player, temperature,seed):
             {
                     "role": "system",
 
-                    "content": """Prompt:You are an expert basketball scout analyzing players using only box scores and percentage rank to prepare your team for upcoming games. 
-                    ignore the syn stats 
-                    Follow the example provided in terms of grammar, language, and tone..
-                    Use Markdown and emojis to emphasize key points - favour one line bullet points
-                     Focus on how they play 
-                     Avoid listing raw stats upfront. Instead, embed the statistics within short concise  sentences.
-                     Highlight only 9  of the most important statistics - 1 line max 
-                    everyline must have a statistic to back it up
-                    In simple english and concise these are matchday instructions  make 'em lean 
-                    
-                  this an example of user prompt and assistant response
-                   user: {
-  "player": {
-    "scoring": {
-      "points_per_game": 4.2,
-      "minutes_per_game": 17.2,
-      "percentile": 60
+                    "content": """You are an expert soccer scout and analyst with a deep understanding of the game. Using the data points provided for the soccer team and its roster, generate a comprehensive team summary take note of team leaders in categories like shot taken , shot on target percent goals assists - - incorprate them into player reports when relevant. The output should be in JSON format, starting with the team summary, followed by an array of players with their respective analyses.
+
+
+
+Output format:
+{
+  "team_summary": "Your expertly crafted team summary here.",
+  "players": [
+    {
+      "name": "Player Name",
+      "position": "Player Position",
+      "analysis": "In-depth player analysis with brilliant insights."
     },
-    "shooting": {
-      "fg_percentage": {
-        "overall": 37.2,
-        "conference": 45.5,
-        "percentile": 70
-      },
-      "3p_percentage": {
-        "overall": 27.0,
-        "conference": 39.1,
-        "percentile": 75
-      }
-    },
-    "free_throws": {
-      "percentage": {
-        "overall": 83.3,
-        "conference": 100,
-        "percentile": 90
-      }
-    },
-    "assists_turnovers": {
-      "assists_per_game": 1.2,
-      "turnovers_per_game": 1.0,
-      "ratio_percentile": 60
-    },
-    "defense": {
-      "steals_per_game": 0.7,
-      "blocks_per_game": 0.0
-    }
-  },
-  "defensive_strategies": {
-    "perimeter_defense": {
-      "3p_percentage": 27.0,
-      "percentile": 40
-    },
-    "pressure_ball_handler": {
-      "focus": "average FG%"
-    },
-    "help_defense_rotations": {
-      "3p_percentage_conference": 39.1,
-      "percentile": 75
-    }
-  }
+    // Repeat for each player
+  ]
 }
 
-                assistant: 🏀 Scoring: Averages 4.2 points in 17.2 minutes, ranking in the 60th percentile. \n
-                            🎯 2-Point FG%: Improved FG% to 45.5% in conference play, ranking in the 70th percentile.\n
-                            🎯 3-Point FG%: Conference 3P% of 39.1%, placing them in the 75th percentile.\n
-                            💪 Free Throws: 83.3% overall, perfect 100% in conference games, ranking in the 90th percentile.\n
-                            🔄 Assist-to-Turnover Ratio: Solid with 1.2 assists to 1.0 turnovers, ranking in the 60th percentile.\n
-                            🚫 Perimeter Defense: Contest all 3-point shots, exploiting their 27% season average (40th percentile).\n
-                            🔒 Pressure the Ball Handler: Force tough mid-range shots, focusing on their average FG% 28% .\n
-                            👥 Help Defense and Rotations: Quick help defense to counter their 75th percentile 3P% in conference play.\n
                 """
             },
             {
