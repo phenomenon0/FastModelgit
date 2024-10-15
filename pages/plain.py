@@ -66,7 +66,9 @@ temperature = st.slider("Changes behavior- higher is more random🎲", min_value
  #   scouting_report = get_scouting_report(client,  "gpt-4o", player_boxscore,temperature, seed_value)
   #  st.write(scouting_report)
     
-
+if st.button("Generate Scouting Report from input"):
+    scouting_report = get_scouting_report(client,  "gpt-4o", player_boxscore,temperature)
+    st.write(scouting_report)
 # Sample data
 import json
 with open("players.json", "r") as f:
