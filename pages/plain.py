@@ -62,9 +62,9 @@ seed_value = st.radio("Seed Values", [111, 2652, 230, 4432],horizontal=True)
 temperature = st.slider("Changes behavior- higher is more random🎲", min_value=0.5, max_value=1.0, value=0.7, step=0.1)
 
 
-#if st.button("Generate Scouting Report from input"):
- #   scouting_report = get_scouting_report(client,  "gpt-4o", player_boxscore,temperature, seed_value)
-  #  st.write(scouting_report)
+if st.button("Generate Scouting Report from input"):
+    scouting_report = get_scouting_report(client,  "gpt-4o", player_boxscore,temperature, seed_value)
+    st.write(scouting_report)
     
 if st.button("Generate Scouting Report from input"):
     scouting_report = get_scouting_report(client,  "gpt-4o", player_boxscore,temperature)
