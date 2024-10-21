@@ -369,7 +369,9 @@ OUTPUT
 **Dunphy F** 10 substitute appearances for a combined 150 minutes , as a forward. Scoring 1 goal and providing 2 assists in that limited time frame. Watch out when he comes on.
 
 **Mitch Fergusson D**  who likes two go forward. With 2 assists to show for it nad he's been fouled 5 times and does let loose the occasional shot 4 in 11 starts. 
-                    """
+                    
+
+reply in JSON """
             },
             {
                 "role": "user",
