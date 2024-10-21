@@ -5,7 +5,7 @@ import streamlit as st
 import os 
 
 
-st.sidebar.markdown('HOCKEY')
+st.sidebar.markdown('Soccer')
 
      
      
