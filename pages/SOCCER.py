@@ -5,15 +5,13 @@ import streamlit as st
 import os 
 
 
-st.sidebar.markdown('Soccer')
+st.sidebar.markdown('Soccer ***_****')
 
      
      
-st.sidebar.selectbox("Select a page", ["Current", "Beta", "Alpha", "teams", "Money Ranger"])
 
-################ PAGE STARTS HERE ############################## 
 
-st.title("A-eye: AI powered ")
+st.title("Eyes on the ball ")
 #team_voice = st.text_input("Team scout- sample report ")
 player_boxscore = st.text_input("Paste Player box scores + sample data")
 client = OpenAI(api_key=st.secrets["open_ai"])
